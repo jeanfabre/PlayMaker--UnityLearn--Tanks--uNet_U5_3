@@ -6,6 +6,9 @@ public class TankLobbyHook : UnityStandardAssets.Network.LobbyHook
 {
     public override void OnLobbyServerSceneLoadedForPlayer(NetworkManager manager, GameObject lobbyPlayer, GameObject gamePlayer)
     {
+
+		Debug.LogWarning("OnLobbyServerSceneLoadedForPlayer : lobbyPlayer:"+lobbyPlayer+" gamePlayer:"+gamePlayer);
+
         if (lobbyPlayer == null)
             return;
 
